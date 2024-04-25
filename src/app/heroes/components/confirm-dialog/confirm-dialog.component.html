@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Está seguro de Borrar?</h1>
+<h2 mat-dialog-title>{{data.superhero}}</h2>
+<div mat-dialog-content>
+<p>Si borra el héroe no se podra revertir el proceso</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Borrar</button>
+    <span class="spacer"></span>
+    <button mat-button  (click)="onConfirm()" cdkFocusInitial>Borrar</button>
+</div>
+
+
